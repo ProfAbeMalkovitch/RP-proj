@@ -1,1 +1,29 @@
+🔍 Completed Work
 
+Conducted an in-depth literature review using sources from Google Scholar and Education Sciences (2023) on adaptive learning using AI.
+
+Analyzed multiple AI/ML approaches used in adaptive learning systems:
+
+Bayesian Knowledge Tracing (BKT) – for tracking learners’ mastery levels in real-time.
+
+Decision Tree (C4.5) – for categorizing learners based on quiz results and recommending appropriate content.
+
+Reinforcement Learning (Q-Learning) – for continuously improving path generation through feedback loops.
+
+Evaluated algorithm strengths, scalability, and interpretability for e-learning contexts.
+
+⚙️ Ongoing Work
+
+Comparing algorithm performance and suitability for quiz-based learning adaptation.
+
+Designing a hybrid adaptive model combining Decision Tree (for initial path classification) and BKT (for continuous knowledge tracking).
+
+Preparing the conceptual architecture for integrating these algorithms into the system backend (Spring Boot / Node.js).
+
+🎯 Next Steps
+
+Finalize the primary algorithm to implement in the adaptive engine.
+
+Create flow diagrams and pseudo-code for the algorithm’s data flow and decision process.
+
+Begin prototype development for backend integration with quiz analytics data.
