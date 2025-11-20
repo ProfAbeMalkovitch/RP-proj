@@ -55,3 +55,28 @@ Extracts, parses, and structures educational content from textbooks, teacher gui
 - Validation by teachers using official textbooks and guides  
 
 ---
+
+
+## 📈 4. Progress Monitoring & Streak Analytics System (PMSAS)
+
+### Purpose  
+Tracks student engagement and progress using streaks, badges, awards, and predictive analytics.
+
+### Features  
+- Curriculum-linked streak engine  
+- Predictive disengagement alerts  
+- Teacher dashboard for interventions  
+- Real-time analytics & visualizations  
+
+### Technologies  
+- **Frontend:** React.js / React Native  
+- **Backend:** Node.js / Spring Boot  
+- **Analytics:** Python (scikit-learn, pandas), D3.js  
+- **Database:** MongoDB / Firebase / AWS S3  
+
+### Evaluation  
+- 20%+ improvement in engagement consistency  
+- Metrics: **Avg streak length**, **drop-off reduction**, **intervention success rate**  
+
+---
+
