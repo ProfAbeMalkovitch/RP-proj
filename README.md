@@ -13,3 +13,45 @@
 
 **Supervisor:** Mrs. Geethanjali Wimalaratne  
 **Co-Supervisor:** Dr. Kapila Dissanayake  
+
+---
+
+## 🧩 Overview
+This platform proposes a **teacher-supervised, AI-assisted e-learning ecosystem** that solves common issues in digital learning such as:  
+- Generic content  
+- Lack of personalization  
+- No real-time motivation or analytics  
+- No curriculum alignment  
+- Limited teacher control  
+
+The platform integrates four components:
+1. **Education Content Extraction & Structuring Engine (ECESE)**
+2. **Intelligent Learning Pathway Generator (ILPG)**
+3. **Micro-Learning via Daily Challenges**
+4. **Progress Monitoring & Streak Analytics System (PMSAS)**
+
+---
+
+## 🧠 1. Education Content Extraction & Structuring Engine (ECESE)
+
+### Purpose  
+Extracts, parses, and structures educational content from textbooks, teacher guides, and PDFs—fully aligned with curriculum requirements.
+
+### Features  
+- NLP-driven content extraction  
+- Taxonomy & ontology-based curriculum mapping  
+- Teacher validation dashboards  
+- Structured output for downstream modules  
+
+### Technologies  
+- **NLP:** spaCy, NLTK, Hugging Face  
+- **Parsing:** PDFBox, PyPDF2  
+- **Backend:** Spring Boot / Node.js  
+- **Frontend:** React.js / React Native  
+- **Database:** MongoDB / Firebase / AWS S3  
+
+### Evaluation  
+- ≥ 90% curriculum alignment  
+- Validation by teachers using official textbooks and guides  
+
+---
