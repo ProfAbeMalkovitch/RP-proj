@@ -13,7 +13,7 @@ import fitz  # PyMuPDF
 try:
     from pymongo import MongoClient
     from bson import ObjectId
-    MONGO_URI = "mongodb+srv://cursorrp_db_user:ka1r5cs2fPu1fcIk@cluster0.7fr4den.mongodb.net/?appName=Cluster0"
+    
     mongo_client = MongoClient(MONGO_URI)
     db = mongo_client.rpelearn_db
     MONGO_CONNECTED = True
