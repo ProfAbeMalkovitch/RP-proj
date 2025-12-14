@@ -82,7 +82,7 @@ def extract_data_from_pdf(pdf_path):
 # 2. Make sure you have PyMuPDF installed (see how_to_run.md).
 # 3. Place the PDF you want to read in the same directory as this script.
 # 4. Change 'your_file.pdf' to the actual name of your PDF file.
-# 5. Run the script from your terminal: python extract_pdf_text.py
+# 5. Run the script from your terminal: python extract_pdf.py
 if __name__ == "__main__":
     # --- IMPORTANT ---
     # Change this to the name of your PDF file
