@@ -1,0 +1,523 @@
+/* Generate Roadmap Button Component Styles */
+.generate-roadmap-container {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.generate-roadmap-btn {
+  width: 100%;
+  padding: 18px 30px;
+  background: linear-gradient(135deg, var(--primary-color, #667eea) 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.generate-roadmap-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.generate-roadmap-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.generate-roadmap-btn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.generate-roadmap-btn.loading {
+  background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+}
+
+.btn-icon {
+  font-size: 1.3em;
+  animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+.generate-roadmap-hint {
+  text-align: center;
+  color: var(--text-secondary, #666);
+  font-size: 0.9em;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Loading Spinner */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error Message */
+.generate-roadmap-error {
+  background-color: #f8d7da;
+  border: 2px solid #f5c6cb;
+  color: #721c24;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.generate-roadmap-error span {
+  font-size: 1.5em;
+}
+
+.generate-roadmap-error p {
+  flex: 1;
+  margin: 0;
+  font-weight: 500;
+}
+
+.generate-roadmap-error button {
+  background: none;
+  border: none;
+  color: #721c24;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.generate-roadmap-error button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Success Message */
+.generate-roadmap-success {
+  background-color: #d4edda;
+  border: 2px solid #c3e6cb;
+  color: #155724;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.generate-roadmap-success span {
+  font-size: 1.5em;
+}
+
+.generate-roadmap-success p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Confirmation Dialog */
+.generate-roadmap-confirm {
+  background-color: #fff3cd;
+  border: 2px solid #ffeaa7;
+  color: #856404;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  animation: slideIn 0.3s ease;
+}
+
+.generate-roadmap-confirm p {
+  margin: 0 0 15px 0;
+  font-weight: 500;
+}
+
+.confirm-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-confirm,
+.btn-cancel {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-confirm {
+  background-color: var(--primary-color, #667eea);
+  color: white;
+}
+
+.btn-confirm:hover:not(:disabled) {
+  background-color: #5568d3;
+  transform: translateY(-1px);
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-cancel:hover:not(:disabled) {
+  background-color: #5a6268;
+}
+
+.btn-confirm:disabled,
+.btn-cancel:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .generate-roadmap-btn {
+    padding: 15px 20px;
+    font-size: 1em;
+  }
+
+  .confirm-buttons {
+    flex-direction: column;
+  }
+
+  .btn-confirm,
+  .btn-cancel {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.generate-roadmap-container {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.generate-roadmap-btn {
+  width: 100%;
+  padding: 18px 30px;
+  background: linear-gradient(135deg, var(--primary-color, #667eea) 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.generate-roadmap-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.generate-roadmap-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.generate-roadmap-btn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.generate-roadmap-btn.loading {
+  background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+}
+
+.btn-icon {
+  font-size: 1.3em;
+  animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+.generate-roadmap-hint {
+  text-align: center;
+  color: var(--text-secondary, #666);
+  font-size: 0.9em;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Loading Spinner */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error Message */
+.generate-roadmap-error {
+  background-color: #f8d7da;
+  border: 2px solid #f5c6cb;
+  color: #721c24;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.generate-roadmap-error span {
+  font-size: 1.5em;
+}
+
+.generate-roadmap-error p {
+  flex: 1;
+  margin: 0;
+  font-weight: 500;
+}
+
+.generate-roadmap-error button {
+  background: none;
+  border: none;
+  color: #721c24;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.generate-roadmap-error button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Success Message */
+.generate-roadmap-success {
+  background-color: #d4edda;
+  border: 2px solid #c3e6cb;
+  color: #155724;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.generate-roadmap-success span {
+  font-size: 1.5em;
+}
+
+.generate-roadmap-success p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Confirmation Dialog */
+.generate-roadmap-confirm {
+  background-color: #fff3cd;
+  border: 2px solid #ffeaa7;
+  color: #856404;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  animation: slideIn 0.3s ease;
+}
+
+.generate-roadmap-confirm p {
+  margin: 0 0 15px 0;
+  font-weight: 500;
+}
+
+.confirm-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-confirm,
+.btn-cancel {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-confirm {
+  background-color: var(--primary-color, #667eea);
+  color: white;
+}
+
+.btn-confirm:hover:not(:disabled) {
+  background-color: #5568d3;
+  transform: translateY(-1px);
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-cancel:hover:not(:disabled) {
+  background-color: #5a6268;
+}
+
+.btn-confirm:disabled,
+.btn-cancel:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .generate-roadmap-btn {
+    padding: 15px 20px;
+    font-size: 1em;
+  }
+
+  .confirm-buttons {
+    flex-direction: column;
+  }
+
+  .btn-confirm,
+  .btn-cancel {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

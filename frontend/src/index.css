@@ -1,0 +1,172 @@
+/* Global styles for ILPG application */
+:root {
+  /* Primary Colors - Purple/Indigo Gradient */
+  --primary-color: #667eea;
+  --primary-dark: #5568d3;
+  --primary-light: #818cf8;
+  --primary-lighter: #a5b4fc;
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  
+  /* Text Colors */
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --text-light: #a0aec0;
+  --text-lighter: #cbd5e0;
+  --text-white: #ffffff;
+  
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7fafc;
+  --bg-tertiary: #edf2f7;
+  --bg-quaternary: #e2e8f0;
+  --bg-dark: #1a202c;
+  --bg-darker: #171923;
+  --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --bg-dark-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  
+  /* Status Colors */
+  --success-color: #28a745;
+  --success-light: #d4edda;
+  --success-dark: #155724;
+  --warning-color: #ffc107;
+  --warning-light: #fff3cd;
+  --warning-dark: #856404;
+  --error-color: #dc3545;
+  --error-light: #f8d7da;
+  --error-dark: #721c24;
+  --info-color: #17a2b8;
+  --info-light: #d1ecf1;
+  --info-dark: #0c5460;
+  
+  /* Pathway Colors */
+  --pathway-basic: #ffc107;
+  --pathway-basic-light: #fff3cd;
+  --pathway-intermediate: #17a2b8;
+  --pathway-intermediate-light: #d1ecf1;
+  --pathway-excellent: #667eea;
+  --pathway-excellent-light: #e0e7ff;
+  --pathway-accelerated: #28a745;
+  --pathway-accelerated-light: #d4edda;
+  
+  /* Border Colors */
+  --border-color: #e2e8f0;
+  --border-light: #edf2f7;
+  --border-medium: #cbd5e0;
+  --border-dark: #a0aec0;
+  --border-darker: #718096;
+  --border-darkest: #4a5568;
+  --border-black: #2d3748;
+  --border-white: rgba(255, 255, 255, 0.3);
+  
+  /* Shadow */
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.15);
+  
+  /* Border Radius */
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 15px;
+  --radius-xl: 20px;
+  --radius-2xl: 25px;
+  --radius-full: 50%;
+  
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 50px;
+  --spacing-xxl: 60px;
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary-gradient);
+  color: var(--text-white);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5568d3 0%, #6a3f8f 100%);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-secondary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.error-banner {
+  background-color: var(--error-light);
+  color: var(--error-dark);
+  padding: 15px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  margin: var(--spacing-md);
+  border: 1px solid var(--error-color);
+}
+
+.loading {
+  text-align: center;
+  padding: var(--spacing-xl);
+  color: var(--text-primary);
+  font-size: 1.2em;
+}
+

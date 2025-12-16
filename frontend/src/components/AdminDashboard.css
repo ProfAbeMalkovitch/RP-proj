@@ -1,0 +1,232 @@
+/* Admin Dashboard Component Styles */
+.admin-dashboard-container {
+  min-height: 100vh;
+  background: var(--primary-gradient);
+  padding: 0;
+  display: flex;
+}
+
+.dashboard-content {
+  flex: 1;
+  margin-left: 280px;
+  padding: var(--spacing-md);
+  transition: margin-left 0.3s ease;
+}
+
+.admin-dashboard-container:has(.side-nav.closed) .dashboard-content {
+  margin-left: 70px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    margin-left: 70px;
+  }
+}
+
+.admin-dashboard-header {
+  background: var(--bg-primary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.admin-dashboard-header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-dashboard-header h1 {
+  color: var(--text-primary);
+  margin: 0;
+  font-size: 2em;
+}
+
+.admin-dashboard-header .user-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.admin-dashboard-header .user-info span {
+  color: var(--text-secondary);
+  font-size: 1.1em;
+}
+
+/* Dashboard Stats */
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.stat-card {
+  background: var(--bg-primary);
+  padding: 25px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-card h3 {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-card .stat-value {
+  color: var(--text-primary);
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* Sections */
+.overview-section h2,
+.pathways-section h2,
+.teachers-section h2,
+.students-section h2 {
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.chart-container {
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+}
+
+.chart-container h3 {
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+/* Quick Stats Grid */
+.quick-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.quick-stat-card {
+  background: var(--bg-secondary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--primary-color);
+}
+
+.quick-stat-card h4 {
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.quick-stat-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-stat-card li {
+  padding: 8px 0;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.quick-stat-card li:last-child {
+  border-bottom: none;
+}
+
+/* Pathways Grid */
+.pathways-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.pathway-card {
+  background: var(--bg-secondary);
+  padding: 25px;
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.pathway-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.pathway-header h3 {
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.pathway-description {
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.pathway-students {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+}
+
+/* Tables */
+.teachers-table,
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-primary);
+  margin-top: var(--spacing-md);
+}
+
+.teachers-table thead,
+.students-table thead {
+  background: var(--primary-color);
+  color: var(--text-white);
+}
+
+.teachers-table th,
+.students-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.teachers-table td,
+.students-table td {
+  padding: 15px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.teachers-table tbody tr,
+.students-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.teachers-table tbody tr:hover,
+.students-table tbody tr:hover {
+  background: var(--bg-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-stats,
+  .quick-stats-grid,
+  .pathways-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,321 @@
+/* Concept Mastery Card Styles */
+.concept-mastery-card {
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.mastery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.mastery-header h3 {
+  color: var(--text-primary);
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.overall-mastery {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mastery-label {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+}
+
+.mastery-percentage {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.mastery-progress-bar {
+  width: 100%;
+  height: 12px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: var(--spacing-lg);
+}
+
+.mastery-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: var(--radius-sm);
+}
+
+.concepts-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.no-concepts {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: var(--spacing-lg);
+  font-style: italic;
+}
+
+.concept-item {
+  padding: var(--spacing-md);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  border-left: 4px solid var(--primary-color);
+}
+
+.concept-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.concept-name {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.concept-trend {
+  font-size: 1.2em;
+  cursor: help;
+}
+
+.concept-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.concept-progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.concept-progress-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: var(--radius-sm);
+}
+
+.concept-score {
+  font-weight: 600;
+  font-size: 0.9em;
+  min-width: 45px;
+  text-align: right;
+}
+
+.concept-stats {
+  font-size: 0.85em;
+  color: var(--text-secondary);
+}
+
+.stat-text {
+  color: var(--text-secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.concept-mastery-card {
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.mastery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.mastery-header h3 {
+  color: var(--text-primary);
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.overall-mastery {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mastery-label {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+}
+
+.mastery-percentage {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.mastery-progress-bar {
+  width: 100%;
+  height: 12px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: var(--spacing-lg);
+}
+
+.mastery-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: var(--radius-sm);
+}
+
+.concepts-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.no-concepts {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: var(--spacing-lg);
+  font-style: italic;
+}
+
+.concept-item {
+  padding: var(--spacing-md);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  border-left: 4px solid var(--primary-color);
+}
+
+.concept-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.concept-name {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.concept-trend {
+  font-size: 1.2em;
+  cursor: help;
+}
+
+.concept-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.concept-progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.concept-progress-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: var(--radius-sm);
+}
+
+.concept-score {
+  font-weight: 600;
+  font-size: 0.9em;
+  min-width: 45px;
+  text-align: right;
+}
+
+.concept-stats {
+  font-size: 0.85em;
+  color: var(--text-secondary);
+}
+
+.stat-text {
+  color: var(--text-secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "quiz_sample_1",
+  "pathway_id": "pathway_basic",
+  "title": "Sample Quiz for Integration Testing",
+  "description": "This is a sample quiz demonstrating the required format for quiz content integration",
+  "questions": [
+    {
+      "question_id": "q1",
+      "question_text": "What is the capital of France?",
+      "options": [
+        "London",
+        "Berlin",
+        "Paris",
+        "Madrid"
+      ],
+      "correct_answer": 2,
+      "points": 10
+    },
+    {
+      "question_id": "q2",
+      "question_text": "Which planet is closest to the Sun?",
+      "options": [
+        "Venus",
+        "Earth",
+        "Mercury",
+        "Mars"
+      ],
+      "correct_answer": 2,
+      "points": 10
+    },
+    {
+      "question_id": "q3",
+      "question_text": "What is 10 × 5?",
+      "options": [
+        "40",
+        "50",
+        "60",
+        "70"
+      ],
+      "correct_answer": 1,
+      "points": 10
+    },
+    {
+      "question_id": "q4",
+      "question_text": "Which programming language is known for web development?",
+      "options": [
+        "Python",
+        "JavaScript",
+        "C++",
+        "Java"
+      ],
+      "correct_answer": 1,
+      "points": 15
+    },
+    {
+      "question_id": "q5",
+      "question_text": "What does HTML stand for?",
+      "options": [
+        "HyperText Markup Language",
+        "High-level Text Markup Language",
+        "Hyperlink and Text Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correct_answer": 0,
+      "points": 15
+    }
+  ]
+}
+
+
+
+

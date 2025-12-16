@@ -1,0 +1,35 @@
+.pathway-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 2px solid;
+}
+
+.pathway-basic {
+  background-color: var(--pathway-basic-light);
+  color: #856404;
+  border-color: var(--pathway-basic);
+}
+
+.pathway-intermediate {
+  background-color: var(--pathway-intermediate-light);
+  color: var(--info-dark);
+  border-color: var(--pathway-intermediate);
+}
+
+.pathway-excellent {
+  background-color: var(--pathway-excellent-light);
+  color: var(--primary-dark);
+  border-color: var(--pathway-excellent);
+}
+
+.pathway-accelerated {
+  background-color: var(--pathway-accelerated-light);
+  color: var(--success-dark);
+  border-color: var(--pathway-accelerated);
+}
+
