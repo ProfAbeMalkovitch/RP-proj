@@ -79,3 +79,30 @@ Tracks student engagement and progress using streaks, badges, awards, and predic
 - Metrics: **Avg streak length**, **drop-off reduction**, **intervention success rate**  
 
 ---
+
+## 🏗️ System Architecture
+- Microservice-based design  
+- REST API integration between components  
+- Secure cloud deployment (AWS / Firebase)  
+- AES-256 encrypted data handling  
+- Role-based user authentication  
+
+---
+
+## ⚙️ Non-Functional Requirements  
+| Category | Requirement |
+|-----------|--------------|
+| *Performance* | < 2 sec response time |
+| *Availability* | 99.9% uptime |
+| *Security* | AES-256, HTTPS, RBAC |
+| *Usability* | Mobile + Desktop compatibility |
+| *Scalability* | Cloud-native microservices |
+
+---
+
+## 💡 Commercialization  
+- SaaS platform for *schools, **tutoring centers, and **universities*  
+- Subscription/licensing model  
+- Unique selling point: *Curriculum-specific personalization + teacher oversight*  
+
+---
