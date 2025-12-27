@@ -1,15 +1,14 @@
 Micro-Learning via Daily Challenges
 
-Purpose:
-Delivers daily, syllabus-aligned micro-learning tasks to improve engagement, retention, and habit formation.
+Purpose : Delivers daily, syllabus-aligned micro-learning tasks to improve engagement, retention, and habit formation.
 
-Features:
+Features  
 - Adaptive task scheduling  
 - Teacher-approved micro-lessons  
 - Motivation-aware reminders  
 - Comparative analytics (micro vs clustered learning)  
 
-Technologies:
+Technologies  
 - Frontend: React.js / React Native  
 - Backend: Spring Boot / Node.js  
 - Analytics: D3.js, Matomo  
@@ -18,6 +17,6 @@ Technologies:
 Evaluation Metrics  
 - Retention improvement  
 - Streak continuation rate  
-- Dropout reduction  
+- Dropout reduction  
 
 ---
