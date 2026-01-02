@@ -16,7 +16,7 @@ from .roadmap_routes import roadmap_bp
 
 __all__ = [
     'LearningPathwayService',
-    'PathwayError',
+    'PathwayError'
     'learning_pathway_service',
     'ConceptMasteryService',
     'ConceptMasteryError',
@@ -28,4 +28,5 @@ __all__ = [
     'concept_mastery_bp',
     'roadmap_bp'
 ]
+
 
