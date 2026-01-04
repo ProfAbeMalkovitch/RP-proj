@@ -56,6 +56,53 @@ Extracts, parses, and structures educational content from textbooks, teacher gui
 
 ---
 
+## 🧭 2. Intelligent Learning Pathway Generator (ILPG)
+
+### Purpose  
+Creates personalized learning paths for students based on performance and engagement.
+
+### Features  
+- Learner categorization: **Basic**, **Balanced**, **Accelerated**  
+- Rule-based and transparent (no black-box AI)  
+- Teacher-driven content and control  
+- Dynamic adaptation based on quiz history, behavior, and streaks  
+
+### Technologies  
+- **Frontend:** React.js, Bootstrap  
+- **Backend:** Node.js, Express  
+- **Analytics:** D3.js, Matomo, Google Analytics  
+- **Database:** Firebase / MongoDB / AWS S3  
+
+### Evaluation  
+- ≥ 90% pathway alignment  
+- Reduced drop-offs, improved engagement  
+- AES-256 encryption & access control for all data  
+
+---
+
+## 📚 3. Micro-Learning via Daily Challenges
+
+### Purpose  
+Delivers daily, syllabus-aligned micro-learning tasks to improve engagement, retention, and habit formation.
+
+### Features  
+- Adaptive task scheduling  
+- Teacher-approved micro-lessons  
+- Motivation-aware reminders  
+- Comparative analytics (micro vs clustered learning)  
+
+### Technologies  
+- **Frontend:** React.js / React Native  
+- **Backend:** Spring Boot / Node.js  
+- **Analytics:** D3.js, Matomo  
+- **Database:** MongoDB / Firebase / AWS S3  
+
+### Evaluation Metrics  
+- Retention improvement  
+- Streak continuation rate  
+- Dropout reduction  
+
+---
 
 ## 📈 4. Progress Monitoring & Streak Analytics System (PMSAS)
 
@@ -106,3 +153,71 @@ Tracks student engagement and progress using streaks, badges, awards, and predic
 - Unique selling point: *Curriculum-specific personalization + teacher oversight*  
 
 ---
+
+## ▶️ How to run the application
+## Prerequisites
+
+- **Python 3.8+** (for backend)
+- **Node.js 16+** and npm (for frontend)
+- **MongoDB** (local or cloud instance)
+- **Groq API Key** (for AI features)
+
+## Setup
+
+### Backend Setup
+
+1. Navigate to the backend directory:
+   
+   cd backend
+   2. Create a virtual environment (recommended):
+ 
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   
+3. Install Python dependencies:
+   pip install -r requirements.txt
+   4. Create a `.env` file in the backend directory:v
+   MONGODB_URI=your_mongodb_connection_string
+   JWT_SECRET_KEY=your_jwt_secret_key
+   GROQ_API_KEY=your_groq_api_key
+   GROQ_MODEL=llama-3.1-8b-instant
+   ### Frontend Setup
+
+1. Navigate to the frontend directory:
+   cd frontend
+   2. Install dependencies:
+   npm install
+   ## Running the Application
+
+### Backend Services
+
+The application requires two backend services:
+
+1. **Main Flask API** (port 5000):
+   
+   cd backend
+   python app.py
+   2. **ECESE FastAPI Service** (port 5001):
+   cd backend
+   uvicorn ecese_app:app --port 5001 --reload
+   ### Frontend
+
+1. Start the development server:
+   
+   cd frontend
+   npm run dev
+      The frontend will typically run on `http://localhost:5173`
+
+## Access Points
+
+- **Frontend**: http://localhost:5173
+- **Main API**: http://localhost:5000
+- **ECESE API**: http://localhost:5001
+- **ECESE API Docs**: http://localhost:5001/docs
+
+## Notes
+
+- Make sure MongoDB is running and accessible
+- Both backend services must be running for full functionality
+- The ECESE service handles PDF content extraction and AI-powered structuring
+- The main Flask API handles authentication, learning pathways, and progress tracking
