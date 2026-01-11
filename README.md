@@ -136,6 +136,9 @@ Tracks student engagement and progress using streaks, badges, awards, and predic
 - Role-based user authentication  
 
 ---
+<img width="1124" height="693" alt="image" src="https://github.com/user-attachments/assets/652d2ef5-cfd3-4a3d-a4fe-e636c67e9519" />
+
+---
 
 ## ⚙️ Non-Functional Requirements  
 | Category | Requirement |
